@@ -1,0 +1,10 @@
+dist: xenial
+language: python
+python:
+  - "3.7"
+install: #install step to be run on the server 
+  - pip install -r requirements.txt
+script:
+  - pytest
+
+#You can set .env variables on Travis, but probably not the best idea
